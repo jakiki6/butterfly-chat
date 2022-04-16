@@ -13,13 +13,13 @@ It's a chat system that is designed to run on top of TOR and make use of its pri
 2. It runs a server that accepts incoming messages
 3. The client can send messages to that server
 
-## Names
+# Names
 * node: a hidden service that accepts messages and/or can send messages
 * user: a ed25519 keypair
     * nodes and users aren't the same
       * you can have a node without any users, a node with more than one user and a user running on many nodes or even nodes that relay messages
 
-## Message format
+# Message format
 * JSON
 * format
   * payload: string (is JSON)
@@ -29,7 +29,7 @@ It's a chat system that is designed to run on top of TOR and make use of its pri
   * key: string (base85 of the sender's ed25519 public key)
   * sig: string (signature over the raw bytes of payload)
 
-## Send flow
+# Send flow
 C>S send public key for X25519 key exchange
 S>C does the same
 C>S sends encrypted message
