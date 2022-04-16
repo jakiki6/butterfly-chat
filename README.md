@@ -30,7 +30,7 @@ It's a chat system that is designed to run on top of TOR and make use of its pri
   * sig: string (signature over the raw bytes of payload)
 
 ### Send flow
-C>S send public key for X25519 key exchange
-S>C does the same
-C>S sends encrypted message
-C>S closes connection
+* C>S send public key for X25519 key exchange
+* S>C does the same
+* C>S sends encrypted message
+* C>S closes connection
